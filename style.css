@@ -238,7 +238,6 @@
 
 .hero_content {
     width: 600px;
-    min-width: 400px;
 }
 
 .hero_content > h1 {
@@ -316,8 +315,6 @@
         background-size: contain;
     }
     .hero_content {
-        padding: 0 !important;
-        /* padding: 25px 40px !important; */
         width: 100%;
         background-color: #f7f7f7a4;
     }
@@ -325,6 +322,7 @@
         font-size: 35px;
     }
     .hero_content h4 {
+        margin-top: 20px;
         font-size: 18px;
     }
     .hero_content span {
@@ -335,6 +333,6 @@
         color: black !important;
     }
     .wrapper {
-        padding: 0;
+        padding: 0 30px !important;
     }    
 }
