@@ -316,7 +316,8 @@
         background-size: contain;
     }
     .hero_content {
-        padding: 25px 40px !important;
+        padding: 0 !important;
+        /* padding: 25px 40px !important; */
         width: 100%;
         background-color: #f7f7f7a4;
     }
@@ -334,10 +335,6 @@
         color: black !important;
     }
     .wrapper {
-        /* padding: 0; */
-    }
-    .hero_section {
-        background-image: none;
-    }
-    
+        padding: 0;
+    }    
 }
