@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Custom Classes */
+.wrapper {
+    padding: 0 40px;
+}
+
+.color_black {
+    color: black !important;
+}
+
+.cp {
+    cursor: pointer;
+}
+
+/* Top Nav */
+
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    
+    background-color: #005085;
+    color: white;
+}
+
+.top_nav_dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    font-size: 12px;
+    transition: transform 200ms linear;
+}
+
+#arrow_handle {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 10;
+}
+
+#arrow_handle:checked + .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.dropdown_list li, .dropdown_selected {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    list-style: none;
+}
+
+.top_nav img {
+    width: 20px;
+}
+
+.top_nav p {
+    margin: 0;
+}
+
+.dropdown_list {
+    display: none;
+    position: absolute;
+    top: 80%;
+    margin: 0;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: auto;
+    white-space: nowrap; 
+    z-index: 10;
+
+    transform: scaleX(0);
+
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 black;
+
+    transition: transform 300ms linear;
+}
+
+
+.dropdown_list li {
+    padding: 0 10px;
+}
+
+.dropdown_list li:hover {
+    background-color: rgb(212, 212, 212)
+}
+
+#arrow_handle:checked ~ .dropdown_list {
+    display: block;   
+    transform: scaleX(1);
+}
+
+/* Main Nav Bar */
+
+.main_nav {
+    height: 90px;
+}
+
+.main_nav p {
+    margin: 0;
+}
+
+.fa-car-side {
+    color: #005085;
+    font-size: 24px;
+}
+
+.nav_heading {
+    margin: 0;
+    font-weight: bold;
+    color: #1aa9e5;
+}
+
+.nav_btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+
+    background-color: #1aa9e5;
+    color: #fff;
+}
+
+/* Hero Section */
+
+.hero_section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    background-image: url(./assets/images/HeroCar.png);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+
+    background-color: #f5f6fb;
+}
+
+.hero_content {
+    width: 600px;
+    min-width: 400px;
+}
+
+.hero_content > h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* Search Container */
+
+.search_container {
+    position: absolute;
+    top: 90%;
+    box-shadow: 0 5px 20px 0 rgb(227, 227, 227);
+    border-radius: 10px;
+    width: auto;
+    background-color: #fff;
+}
+
+.search_container p {
+    margin: 0;
+}
+
+.fa-clock, .fa-calendar-alt {
+    font-size: 25px;
+}
+
+.search_container > div >div {
+    border-left: 1px solid rgb(206, 206, 206);
+}
+
+.search_container > div:first-child, .search_container > div:last-child {
+    border: none;
+}
+
+.search_container > div:last-child {
+    background-color: #1aa9e5;
+    border-radius: 0 10px 10px 0;
+}
+
+#search_input {
+    border: none;
+    outline: none;
+}
+
+.fa-search {
+    font-size: 25px;
+}
+
+@media (max-width: 1035px) {
+    .main_nav {
+        position: relative;
+    }
+    .nav_links {
+        display: none !important;
+        flex-direction: column;
+        width: 90%;
+        position: absolute;
+        top: 104%;
+        z-index: 4;
+        padding: 20px;
+        margin: 0;
+        border-radius: 10px;
+
+        background-color: #fff;
+    }
+}

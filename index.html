@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Rent A Car</title>
+</head>
+<body>
+    <!-- Top Nav Start -->
+    <div class="top_nav wrapper">
+        <div class="top_nav_dropdown">
+            <div class="dropdown_selected">
+                <img src="./assets/images/countriesFlags/UAE.png" alt="">
+                <p>UAE</p>
+            </div>
+            <input type="checkbox" name="arrow" id="arrow_handle">
+            <i class="fas fa-chevron-down"></i>
+            <ul class="dropdown_list">     
+                <li>
+                    <img src="./assets/images/countriesFlags/saudi-arabia.png" alt="">
+                    <p style="color: black;">Saudia</p>
+                </li>
+                <li>
+                    <img src="./assets/images/countriesFlags/oman.png" alt="">
+                    <p style="color: black;">Oman</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex gap-4">
+                <div class="top_nav_dropdown">
+                    <div class="dropdown_selected">
+                        <img src="./assets/images/countriesFlags/US-English.png" alt="">
+                        <p>English</p>
+                    </div>
+                    <input type="checkbox" name="arrow" id="arrow_handle">
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown_list">     
+                        <li>
+                            <img src="./assets/images/countriesFlags/saudi-arabia.png" alt="">
+                            <p style="color: black;">Arabic</p>
+                        </li>
+                    </ul>
+            </div>
+        
+            <div class="top_nav_dropdown">
+                <div class="dropdown_selected">
+                    <img src="./assets/images/currency/dirham.png" alt="">
+                    <p>AED Dirham</p>
+                </div>
+                <input type="checkbox" name="arrow" id="arrow_handle">
+                <i class="fas fa-chevron-down"></i>
+                <ul class="dropdown_list">     
+                    <li>
+                        <img src="./assets/images/currency/dollar.png" alt="">
+                        <p style="color: black;">US Dollars</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top_nav_dropdown">
+                العربیہ
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Top Nav End -->
+
+    <!-- Main Nav Start -->
+    <nav class="main_nav wrapper d-flex justify-content-between">
+        <div class="d-flex align-items-center gap-1 cp">
+            <i class="fas fa-car-side"></i>
+            <h4 class="nav_heading">Rent</h4>
+        </div>
+        
+        <div class="d-flex gap-4 nav_links">
+    
+            <div class="top_nav_dropdown">
+                <div class="dropdown_selected">
+                    <p>Rent a Car</p>
+                </div>
+                <input type="checkbox" name="arrow" id="arrow_handle">
+                <i class="fas fa-chevron-down"></i>
+                <ul class="dropdown_list">     
+                    <li>
+                        <p style="color: black;">Purchase Car</p>
+                    </li>
+                    <li>
+                        <p style="color: black;">Book Driver</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top_nav_dropdown">
+                <div class="dropdown_selected">
+                    <p>Brands</p>
+                </div>
+                <input type="checkbox" name="arrow" id="arrow_handle">
+                <i class="fas fa-chevron-down"></i>
+                <ul class="dropdown_list">     
+                    <li>
+                        <p style="color: black;">Toyota</p>
+                    </li>
+                    <li>
+                        <p style="color: black;">Civic</p>
+                    </li>
+                    <li>
+                        <p style="color: black;">Honda</p>
+                    </li>
+                    <li>
+                        <p style="color: black;">Suzuki</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top_nav_dropdown">
+                <div class="dropdown_selected">
+                    <p>Yacht Rental</p>
+                </div>
+                <input type="checkbox" name="arrow" id="arrow_handle">
+                <i class="fas fa-chevron-down"></i>
+                <ul class="dropdown_list">     
+                    <li>
+                        <p style="color: black;">---</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top_nav_dropdown ">
+                Promotion
+            </div>
+
+            <div class="top_nav_dropdown ">
+                Contact Us
+            </div>
+
+        </div>
+
+        <div class="d-flex align-items-center gap-3  cp">
+            <p>Login</p>
+            <button class="nav_btn d-flex align-items-center gap-3">
+                <p>Get Started</p>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Main Nav End -->
+
+    <!-- Hero Section Start -->
+        <div class="hero_section">
+            <div class="hero_content wrapper">
+                <h4>Rent a car in <span style="font-size: 28px;" class="color_black">Dubai</span> </h4>
+                <h1>Find your dreams car within a minute</h1>
+                <p class="text-secondary mt-4">Lorem ipsum dolor sit elit. Vitae, rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="mt-4">
+                    <img src="./assets/images/AppStoreBtn.png" alt="">
+                    <img src="./assets/images/PlayStoreBtn.png" alt="">
+                </div>
+            </div>
+        
+            <!-- Search Container Start -->
+                <!-- <div class="w-100 d-flex justify-content-center">
+                    <div class="search_container d-flex">
+
+                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                <i class="fas fa-search"></i>
+                                <input type="text" name="search" id="search_input" placeholder="Pick up location...">
+                            </div>
+                        <div class="py-3">
+                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                <div><i class="far fa-calendar-alt"></i></div>
+                                <div>
+                                    <p class="text-secondary">Pick up date</p>
+                                    <p class="color_black">Mon 15 Jun</p>
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="py-3">
+                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                <div><i class="far fa-clock"></i></div>
+                                <div>
+                                    <p class="text-secondary">Time</p>
+                                    <p class="color_black">10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                <div><i class="far fa-calendar-alt"></i></div>
+                                <div>
+                                    <p class="text-secondary">Drop off date</p>
+                                    <p class="color_black">Fri 25 Jun</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                <div><i class="far fa-clock"></i></div>
+                                <div>
+                                    <p class="text-secondary">Time</p>
+                                    <p class="color_black">10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center px-4 py-3 text-white fw-medium fs-5">
+                            Search
+                        </div>
+                    </div>
+                </div> -->
+            <!-- Search Container End -->
+        </div>
+    <!-- Hero Section End -->
+
+
+
+    
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
