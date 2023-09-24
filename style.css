@@ -343,6 +343,13 @@
     color: #1aa9e5;
 }
 
+.see_more_btn button{
+    padding: 15px 0;
+    border-radius: 3px;
+    border: 1px solid #1aa9e5;
+    color: #1aa9e5;
+}
+
 @media (max-width: 1200px) {
     .search_main {
         display: none !important;
