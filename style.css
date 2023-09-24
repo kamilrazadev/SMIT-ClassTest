@@ -6,12 +6,24 @@
 }
 
 /* Custom Classes */
-.wrapper {
+.wrapper_xs {
     padding: 0 40px !important;
+}
+
+.wrapper_sm {
+    padding: 40px 40px !important;
+}
+
+.wrapper_lg {
+    padding: 80px 40px !important;
 }
 
 .color_black {
     color: black !important;
+}
+
+.bg_secondary {
+    background-color: #f5f6fb;
 }
 
 .cp {
@@ -68,11 +80,11 @@
     list-style: none;
 }
 
-.top_nav img {
+.top_nav_dropdown img {
     width: 20px;
 }
 
-.top_nav p {
+.top_nav_dropdown p {
     margin: 0;
 }
 
@@ -236,8 +248,6 @@
     background-image: url(./assets/images/HeroCar.png);
     background-repeat: no-repeat;
     background-position: 100% 30%;
-
-    background-color: #f5f6fb;
 }
 
 .hero_content {
@@ -306,7 +316,7 @@
 
 .why_us {
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 .why_us_card {
@@ -325,6 +335,12 @@
 
 .why_us_card > div > h4 {
     font-size: 20px;
+}
+
+/* Rental Car Section */
+
+.rental_car_sec i , .rental_car_sec p{
+    color: #1aa9e5;
 }
 
 @media (max-width: 1200px) {
