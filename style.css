@@ -417,6 +417,21 @@
     overflow: hidden;
 }
 
+/* FAQ's Section */
+
+.accordion-item .accordion-button, .accordion-body {
+    background-color: rgba(146, 146, 146, 0.062) !important;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
 @media (min-width: 1250px) {
     .customer_cards > div {
         width: 350px;
