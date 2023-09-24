@@ -399,12 +399,43 @@
 
 /* Rental Deals Section */
 
+/* Customer Sections */
 
+.customer_cards > div:nth-child(2) {
+    height: 430px;
+}
+
+.customer_cards > div:first-child, .customer_cards div:last-child {
+    height: 330px;
+}
+
+.customer_cards > div {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(221, 219, 219, 0.665);
+    min-height: fit-content;
+    overflow: hidden;
+}
+
+@media (min-width: 1250px) {
+    .customer_cards > div {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .customer_cards > div {
+        width: 330px;
+    }    
+}
 
 @media (max-width: 1200px) {
     .search_main {
         display: none !important;
     }
+    .customer_cards > div {
+        width: 280px;
+    }  
 }
 
 @media (max-width: 992px) {
@@ -429,6 +460,9 @@
     .border-md-none {
         border: none !important;
     }
+    .customer_cards > div {
+        width: 200px;
+    }  
 }
 
 @media (max-width: 768px) {
@@ -463,6 +497,9 @@
     .mt-xs-sm {
         margin-top: 50px;
     }
+    .customer_cards > div {
+        width: 80%;
+    }  
 }
 
 @media (max-width: 500px) {
