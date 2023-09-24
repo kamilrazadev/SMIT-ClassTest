@@ -419,9 +419,18 @@
 
 /* FAQ's Section */
 
-.accordion-item .accordion-button, .accordion-body {
-    background-color: rgba(146, 146, 146, 0.062) !important;
-  }
+.accordion-item, .accordion-body {
+    border: 1px solid rgb(236, 236, 236);
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 20px;
+}
+
+.accordion-button {
+    border: 1px solid rgb(236, 236, 236) !important;
+    border-bottom:  none!important;
+    border-radius: 16px !important;    
+}
 
   .accordion-button::after {
     display: none;
@@ -430,7 +439,41 @@
   .accordion-button:focus {
     outline: none !important;
     box-shadow: none !important;
+    background-color: #fff !important;
+    border-radius: 16px 16px 0 0!important;    
   }
+  
+  #one, #two, #three {
+    padding: 0 9px ;
+    background-color:  rgb(243, 243, 243);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+  }
+
+/* Footer */
+
+.footer {
+    background-color: #005085;
+}
+
+.footer * {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer li {
+    list-style: none;
+    font-weight: 300;
+}
+
+.footer > div {
+    gap: 120px;
+}
 
 @media (min-width: 1250px) {
     .customer_cards > div {
