@@ -22,6 +22,10 @@
     color: black !important;
 }
 
+.c_d_blue {
+    color: #005085;
+}
+
 .bg_secondary {
     background-color: #f5f6fb;
 }
@@ -378,6 +382,10 @@
     background-color: #fff;
 }
 
+.rent_cards h4 {
+    color: #005085;
+}
+
 .rent_cards button {
     padding: 10px 0;
     border: none;
@@ -388,6 +396,10 @@
     background-color: #1aa9e5;
     color: #fff;
 }
+
+/* Rental Deals Section */
+
+
 
 @media (max-width: 1200px) {
     .search_main {
